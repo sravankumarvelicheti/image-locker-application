@@ -33,7 +33,7 @@ services:
       PMA_USER: appuser
       PMA_PASSWORD: apppass
     ports:
-      - "8081:80"
+      - "8081:80"   #MySQL PHP in browser
 
 
   backend:
