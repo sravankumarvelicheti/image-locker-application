@@ -7,6 +7,8 @@ const backend = process.env.DOCKER
 
 export default defineConfig({
   plugins: [react()],
+
+  // dev mode (vite dev)
   server: {
     proxy: {
       "/api": {
@@ -15,5 +17,12 @@ export default defineConfig({
         secure: false,
       },
     },
+  },
+
+  // preview mode (vite preview)  <-- THIS FIXES "Blocked request. host not allowed"
+  preview: {
+    host: "0.0.0.0",
+    port: 4173, // keep this matching your Dockerfile
+    allowedHosts: true,
   },
 });
