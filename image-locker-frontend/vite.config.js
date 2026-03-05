@@ -23,6 +23,6 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: 4173, // keep this matching your Dockerfile
-    allowedHosts: ["fromvs.com", "www.fromvs.com"],
+    allowedHosts: true,
   },
 });
