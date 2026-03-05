@@ -15,7 +15,9 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",  // local dev (vite)
-                                "http://localhost:4173"   // docker preview (vite preview)
+                                "http://localhost:4173",
+                                "http://10.0.0.23:4173"
+                                // docker preview (vite preview)
                         )
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
