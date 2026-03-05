@@ -16,7 +16,8 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost:5173",  // local dev (vite)
                                 "http://localhost:4173",
-                                "http://10.0.0.23:4173"
+                                "http://10.0.0.23:4173",//Staging UI
+                                "http://10.0.0.23:4174" // prod UI
                                 // docker preview (vite preview)
                         )
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
