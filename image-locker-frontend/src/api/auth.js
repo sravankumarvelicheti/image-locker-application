@@ -7,5 +7,5 @@ export async function signup(email, password) {
 
 export async function login(email, password) {
   const res = await api.post("/api/auth/login", { email, password });
-  return res.data;
+  return res.data; // { token, userId, email }
 }
