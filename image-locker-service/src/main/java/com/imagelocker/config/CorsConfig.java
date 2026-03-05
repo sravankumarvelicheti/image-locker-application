@@ -19,7 +19,8 @@ public class CorsConfig {
                                 "http://10.0.0.23:4173",//Staging UI
                                 "http://10.0.0.23:4174", // prod UI
                                 "http://fromvs.com",
-                                "http://www.fromvs.com"
+                                "http://www.fromvs.com",
+                                "http://10.0.0.23:4174" // prod UI
                                 // docker preview (vite preview)
                         )
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
